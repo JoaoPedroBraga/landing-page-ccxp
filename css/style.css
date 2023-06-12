@@ -1,0 +1,157 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header {
+    background-color: #FFD900;
+}
+header img {
+    width: 150px;
+    margin: 1%;
+}
+.informacoes{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.info{
+    background-color: #514988;
+    text-align: center;
+    width: 50%;
+}
+.info h1{
+    color: #FFD900;
+    font-size: 3.0rem;
+    margin-top: 1%;
+}
+.info strong {
+    color: #ffffff;
+    font-size: 1.9rem;
+}
+.info p{
+    margin: 35px auto ;
+    width: 70%;
+    color: #ffffff;
+    line-height: 25px;
+}
+.info2{
+    width: 50%;
+    text-align: center;
+}
+.info2 .count-down{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.count-down div{
+    display: flex;
+    align-items: center;
+    margin: 1% 5% 0;
+}
+.count-down h1,
+.count-down p{
+    font-size: 43px;
+    font-weight: 600;
+    color: #514988;
+
+}
+.info2 h2{
+    color: #E33881;
+}
+
+.ingressos{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.dias{
+    text-align: center;
+}
+.dias h4{
+    margin-top: 10px;
+    color: #F3C61F;
+}
+.img-dias{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.img-dias img{
+    margin-top: 10px;
+    width: 204px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+.ingressos button{
+    color: #ffffff;
+    background-color: #514988;
+    border: none;
+    border-radius: 20px;
+    margin-top:28px ;
+    padding: 35px 100px;
+    font-size: 25px;
+    cursor: pointer;
+}
+.card-highlight{
+    transform: translateY(-6px);
+    transition: .3s;
+}
+.card-selected{
+    border: 5px solid #008000;
+}
+.form{
+    background-color: #F3C61F;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+input{
+    text-align: center;
+    background-color: #514988;
+    border-radius: 10px;
+    color: #ffffff;
+    border: 0pt;
+    margin: 30px;
+    width: 300px;
+    height: 50px;
+    font-size: 30px;
+}
+input[type="submit"]{
+    cursor: pointer;
+    width: 150px;
+}
+
+/* Responsividade */
+
+@media only screen and (max-width: 768px){
+    .info{
+        width: 100%;
+    }
+    .info2{
+        width: 100%;
+    }
+    .count-down h1,
+    .count-down p{
+        font-size: 23px;
+    }
+    .ingressos{
+        justify-content: center;
+    }
+    .img-dias img{
+        margin-top: 15px;
+        width: 304px;
+    }
+    .ingressos button{
+        padding: 35px 55px;
+        font-size: 25px;
+        margin-bottom: 35px;
+    }
+    .form{
+        align-items: center;
+    }
+}

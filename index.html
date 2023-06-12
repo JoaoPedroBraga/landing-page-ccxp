@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCXP - 2023</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="inde">
+            <img src="img/logo.svg" alt="Logo da CCXP">
+        </a>
+    </header>
+
+    <main>
+        <section class="informacoes">
+            <div class="info">
+                <h1>REVIVA O ÉPICO</h1>
+                <strong>DE 01 A 04 DE DEZEMBRO</strong>
+                <p>Você consegue sentir? É aquela sensação de finalmente poder falar em voz alta:
+                    "estamos em casa". Sim, em dezembro de 2022, teremos a volta da CCXP física. 
+                    Mas não será qualquer CCXP, vai ser a maior de todos os tempos. Prepare-se para
+                    visitar seus universos favoritos, explorar o Artists' Valley, se emocionar 
+                    nos auditórios e encontrar aventuras épicas a cada passo pelos nossos <br> corredores.
+                </p>
+            </div>
+
+            <div class="info2">
+                <div class="count-down">
+                    <div>
+                        <h1 id="dias">00</h1>
+                        <p>D</p>
+                    </div>
+            
+                    <div>
+                        <h1 id="horas">00</h1>
+                        <p>H</p>
+                    </div>
+            
+                    <div>
+                        <h1 id="minutos">00</h1>
+                        <p>M</p>
+                    </div>
+            
+                    <div>
+                        <h1 id="segundos">00</h1>
+                        <p>S</p>
+                    </div>
+
+                </div>
+
+                <h2>PARA A MAIOR CCXP DE TODOS OS TEMPOS</h2>
+
+                <div class="video">
+                    <video width="90%" controls autoplay loop ><source src="video/Arlequina.mp4" type="video/mp4"></video>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="ingressos">
+            <div class="dias">
+                <h4>AINDA DÁ TEMPO DE GARANTIR O SEU, MAS CORRE!</h4>
+                <div class="img-dias">
+                    <img
+                    onclick="selectCard('#quinta')" 
+                    onmouseover="highlightCard('#quinta')" 
+                    onmouseout="highlightCard('#quinta')" 
+                    id="quinta" src="img/quinta.svg" alt="Ingressos para quinta feira"></>
+                    <img  onclick="selectCard('#sexta')" onmouseover="highlightCard('#sexta')" onmouseout="highlightCard('#sexta')"id="sexta" src="img/sexta.svg" alt="Ingressos para sexta feira"></a>
+                    <img  onclick="selectCard('#sabado')" onmouseover="highlightCard('#sabado')" onmouseout="highlightCard('#sabado')"id="sabado" src="img/sabado.svg" alt="Ingressos para sabado"></a>
+                    <img  onclick="selectCard('#domingo')" onmouseover="highlightCard('#domingo')" onmouseout="highlightCard('#domingo')" id="domingo" src="img/domingo.svg" alt="Ingressos para domingo"></a>
+                </div>
+
+            </div>
+
+            <div class="btn">
+                <button onclick="showSelectedCards()" onmouseover="highlightCard('#botao')" onmouseout="highlightCard('#botao')" id="botao">GARANTA O SEU!</button>
+            </div>
+        </section>
+
+        <section class="form">
+            <form action="https://www.google.com">
+                <input type="email"  id="" placeholder="Digite seu email" required>
+                <input  onmouseover="highlightCard('#enviar')" onmouseout="highlightCard('#enviar')" id="enviar" type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+    
+    <script src="js/script.js"></script>
+    <script src="js/script1.js"></script>
+</body>
+
+</html>
